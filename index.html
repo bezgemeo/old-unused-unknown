@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+
+    <link href="css/fontello.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="menu">
+                <div class="burger">
+                    <a class="burger-btn" href="#">
+                        <i class=" burger-icon icon-menu-1"></i>
+                    </a>
+                    <p class="burger-text">menu</p>
+                </div>
+
+                <ul class="menu-wrapper">
+                    <li class="menu-item">
+                        <a class="menu-item__link" href="#">Адреса магазинов</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-item__link" href="#">Каталог одежды</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-item__link" href="#">Дисконтные карты</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-item__link" href="#">Поставщикам</a>
+                    </li>
+                </ul>
+
+                <span class="menu-closer"></span>
+            </div>
+
+            <div class="logo">
+                <a href="#" class="logo-link">
+                    <img class="logo-img" src="img/logo.png" alt="logo">
+                </a>
+            </div>
+
+            <div class="stores">
+                <a href="#" class="stores-link">
+                    <span class="stores-text">stores</span>
+                    <img class="stores-img" src="img/stores-pointer.png" alt="pointer">
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="banner" style="background: url(img/banner-bg.png) top right / cover no-repeat;">
+    <div class="container">
+        <div class="banner-wrapper">
+            <div class="banner-slider">
+                <div class="banner-slider__item">
+                    <p class="banner-text">
+                        Самье известнье </br>брендь <span class="banner-text_emph">со скидкой <br>30 - 80 %</span>
+                    </p>
+                    <div class="banner-img">
+                        <img src="img/slider-img(contured).png" alt="banner image" class="banner-img__item">
+                    </div>
+                </div>
+                <div class="banner-slider__item">
+                    <p class="banner-text">
+                        Самые известные <br>бренды <span class="banner-text_emph">со скидкой <br>30 - 80 %</span>
+                    </p>
+                    <div class="banner-img">
+                        <img src="img/slider-img(contured).png" alt="banner image" class="banner-img__item">
+                    </div>
+                </div>
+                <div class="banner-slider__item">
+                    <p class="banner-text">
+                        Самые известные <br>бренды <span class="banner-text_emph">со скидкой <br>30 - 80 %</span>
+                    </p>
+                    <div class="banner-img">
+                        <img src="img/slider-img(contured).png" alt="banner image" class="banner-img__item">
+                    </div>
+                </div>
+                <div class="banner-slider__item">
+                    <p class="banner-text">
+                        Самые известные <br>бренды <span class="banner-text_emph">со скидкой <br>30 - 80 %</span>
+                    </p>
+                    <div class="banner-img">
+                        <img src="img/slider-img(contured).png" alt="banner image" class="banner-img__item">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="location">
+    <div class="container">
+        <div class="location-wrapper">
+            <form action="#" class="location-form">
+                <input type="search" class="location-search" placeholder="Поиск">
+                <button type="submit" class="location-submit">
+                    <i class="icon-search"></i>
+                </button>
+            </form>
+            <div class="location-slider">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1" class="location-addr">Люберцы,  м Котельники, Новорязанское ш., 1А, ТЦ Колибри, эт.3 <span class="location-schedule">Пн - Вс 10:00 - 22:00</span></a></li>
+                        <li><a href="#tabs-2" class="location-addr">м Планерная, Планерная ул., 7, ТПУ Планерная, 3 этаж <span class="location-schedule">Пн - Вс 10:00 - 22:00</span></a></li>
+                        <li><a href="#tabs-3" class="location-addr">Реутов, м. Новокосино,Носовихинское ш., 45, ТРК "Реутов парк", 2 этаж <span class="location-schedule">Пн - Вс 10:00 - 22:00</span></a></li>
+                        <li><a href="#tabs-4" class="location-addr">м Тушинская,Тушинская ул., 17, ТЦ Праздник, 3 этаж <span class="location-schedule">Пн - Вс 10:00 - 22:00</span></a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <div class="location-map" id="map1" data-lat="55.681737" data-lng="37.843939"></div>
+                    </div>
+                    <div id="tabs-2">
+                        <div class="location-map" id="map2" data-lat="55.862969" data-lng="37.434918"></div>
+                    </div>
+                    <div id="tabs-3">
+                        <div class="location-map" id="map3" data-lat="55.752283" data-lng="37.887247"></div>
+                    </div>
+                    <div id="tabs-4">
+                        <div class="location-map" id="map4" data-lat="55.826660" data-lng="37.444790"></div>
+                    </div>
+                </div>
+                <div id="tabs2">
+                    <ul>
+                        <li><a href="#tabs-5" class="location-addr">Люберцы,  м Котельники, Новорязанское ш., 1А, ТЦ Колибри, эт.3 <span class="location-schedule">Пн - Вс 10:00 - 22:00</span></a></li>
+                        <li><a href="#tabs-6" class="location-addr">м Планерная, Планерная ул., 7, ТПУ Планерная, 3 этаж <span class="location-schedule">Пн - Вс 10:00 - 22:00</span></a></li>
+                        <li><a href="#tabs-7" class="location-addr">Реутов, м. Новокосино,Носовихинское ш., 45, ТРК "Реутов парк", 2 этаж <span class="location-schedule">Пн - Вс 10:00 - 22:00</span></a></li>
+                        <li><a href="#tabs-8" class="location-addr">м Тушинская,Тушинская ул., 17, ТЦ Праздник, 3 этаж <span class="location-schedule">Пн - Вс 10:00 - 22:00</span></a></li>
+                    </ul>
+                    <div id="tabs-5">
+                        <div class="location-map" id="map5" data-lat="55.681737" data-lng="37.843939"></div>
+                    </div>
+                    <div id="tabs-6">
+                        <div class="location-map" id="map6" data-lat="55.862969" data-lng="37.434918"></div>
+                    </div>
+                    <div id="tabs-7">
+                        <div class="location-map" id="map7" data-lat="55.752283" data-lng="37.887247"></div>
+                    </div>
+                    <div id="tabs-8">
+                        <div class="location-map" id="map8" data-lat="55.826660" data-lng="37.444790"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="catalogue">
+    <div class="container">
+        <div class="title">
+            <h1 class="heading">Каталог</h1>
+        </div>
+
+        <div class="catalogue-wrapper">
+            <div class="catalogue-column catalogue-column_main">
+                <a href="#" class="catalogue-item catalogue-item_large">
+                    <img src="img/catalogue-img-1.png" alt="фото" class="catalogue-item__img">
+                    <span class="catalogue-item__name">Женская одежда.</span>
+                </a>
+            </div>
+
+            <div class="catalogue-column catalogue-column_minor">
+                <a href="#" class="catalogue-item catalogue-item_norm">
+                    <img src="img/catalogue-img-2.png" alt="фото" class="catalogue-item__img">
+                    <span class="catalogue-item__name">Мужская одежда.</span>
+                </a>
+                <a href="#" class="catalogue-item catalogue-item_norm">
+                    <img src="img/catalogue-img-3.png" alt="фото" class="catalogue-item__img">
+                    <span class="catalogue-item__name">Детская одежда.</span>
+                </a>
+            </div>
+
+            <div class="catalogue-column catalogue-column_minor">
+                <a href="#" class="catalogue-item catalogue-item_norm">
+                    <img src="img/catalogue-img-4.png" alt="фото" class="catalogue-item__img">
+                    <span class="catalogue-item__name">Обувь.</span>
+                </a>
+                <a href="#" class="catalogue-item catalogue-item_norm">
+                    <img src="img/catalogue-img-5.png" alt="фото" class="catalogue-item__img">
+                    <span class="catalogue-item__name">Товары для дома.</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="discount">
+    <div class="container">
+        <div class="title">
+            <h1 class="heading">Дисконтные карты</h1>
+        </div>
+
+        <div class="discount-wrapper">
+            <div class="discount-column">
+                <div class="discount-name">
+                    <img src="img/sale.png" alt="Скидка" class="discount-name__img">
+                    <span class="discount-name__text">Скидка 5%:</span>
+                </div>
+                <ul class="discount-list">
+                    <li class="discount-item">
+                        <p class="discount-item__text">на кассе при сканировании штрих-кода</p>
+                    </li>
+                    <li class="discount-item">
+                        <p class="discount-item__text">копия, фото и т.д. принимаются, если штрих-код сканируется</p>
+                    </li>
+                    <li class="discount-item">
+                        <p class="discount-item__text">скидка с первой покупки</p>
+                    </li>
+                    <li class="discount-item">
+                        <p class="discount-item__text">все скидки суммируются</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="discount-column">
+                <div class="discount-name">
+                    <img src="img/credit-card.png" alt="дисконтная карта" class="discount-name__img">
+                    <span class="discount-name__text">Стоимость карты - 100 рублей</span>
+                </div>
+                <div class="discount-name">
+                    <img src="img/free.png" alt="бесплатно" class="discount-name__img">
+                    <span class="discount-name__text">Иногда бывают акции,когда карта бесплатна</span>
+                </div>
+                <div class="discount-name">
+                    <img src="img/shirt.png" alt="обемн/возврат" class="discount-name__img">
+                    <span class="discount-name__text">При возврате или обмене товара стоимость учитывает скидку</span>
+                </div>
+            </div>
+
+            <div class="discount-column discount-column_width">
+                <a href="#" class="discount-link">
+                    <img src="img/woss.png" alt="woss outlet" class="discount-link__brand">
+                    <p class="discount-link__off">5 <span class="discount-link__percent">%</span></p>
+                    <span class="discount-link__conditions">*условия на wossoutlet.com</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="providers">
+    <div class="container">
+        <div class="title">
+            <h1 class="heading">Поставщикам</h1>
+        </div>
+
+        <div class="providers-wrapper">
+            <div class="providers-video">
+                <div class="providers-video__proportional">
+                    <div class="providers-video__overlay" id="playbackButton" style="background-image: url(img/video-preview.png); background-size: cover;">
+                        <a href="javascript:void(0)" class="providers-video__play">
+                            <img src="img/play-btn.png" alt="play" class="providers-video__play-btn">
+                        </a>
+                        <span class="providers-video__caption">Для поставщиков</span>
+                    </div>
+                    <iframe class="providers-video__frame" src="https://www.youtube.com/embed/Vg_-8Fnwrno" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="providers-description">
+                <p class="providers-description__text">Наш фокус – множество известных мировых брендов с невероятной экономией. У нас в магазине покупать легко и весело.</p>
+                <p class="providers-description__text">Мы работаем напрямую с дистрибьюторами и представительствами брендов и получаем лучший ассортимент с большими скидками. </p>
+                <p class="providers-description__text">«Никаких излишеств» - в наших магазинах вы не найдете декораций, оформленных витрин и манекенов, так мы можем предоставить больше выгоды для наших покупателей.</p>
+                <p class="providers-description__text">Мы любим совершать новые сделки – это значит, что новый ассортимент попадает в магазины каждый день!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-wrapper">
+            <span class="footer-copyright">&copy; 2018 Woss. Все права защищены.</span>
+            <div class="footer-contacts">
+                <a href="tel:+7 (800) 333 22 11" class="footer-contacts__link">
+                    <img src="img/phone-call.png" alt="телефон" class="footer-contacts__img">
+                    +7 (800) 333 22 11
+                </a>
+                <a href="mailto:info@wossoutlet.com" class="footer-contacts__link">
+                    <img src="img/email.png" alt="email" class="footer-contacts__img">
+                    info@wossoutlet.com
+                </a>
+            </div>
+            <div class="footer-socials">
+                <a href="#" class="footer-socials__icon">
+                    <i class="icon-facebook"></i>
+                </a>
+                <a href="#" class="footer-socials__icon">
+                    <i class="icon-vk"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+<script src="js/slick.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDVAwlI-F88UuvzXjn_dTx5woNEUEItDp8"></script>
+<!--
+<script src="js/map.js"></script>
+-->
+<script src="js/script.js"></script>
+
+</body>
+</html>
